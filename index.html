@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roshan Rayala Bhaskar | Digital Engineering & AI Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Roshan Rayala Bhaskar, Digital Engineering specialist focusing on Gen AI, Computer Vision, and CAD automation.">
+    <link rel="stylesheet" href="index.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- DevIcons for technology brand icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+
+<body>
+
+    <!-- Infinite Grid Background -->
+    <div id="grid-background" class="grid-background">
+        <!-- Layer 1: Subtle always-visible grid -->
+        <svg class="grid-layer grid-subtle">
+            <defs>
+                <pattern id="grid-pattern-subtle" width="40" height="40" patternUnits="userSpaceOnUse">
+                    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-width="1" />
+                </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grid-pattern-subtle)" />
+        </svg>
+
+        <!-- Layer 2: Highlighted grid (revealed by mouse flashlight) -->
+        <svg id="grid-highlight" class="grid-layer grid-highlight">
+            <defs>
+                <pattern id="grid-pattern-highlight" width="40" height="40" patternUnits="userSpaceOnUse">
+                    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-width="1" />
+                </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grid-pattern-highlight)" />
+        </svg>
+
+        <!-- Decorative blur spheres -->
+        <div class="blur-sphere sphere-orange"></div>
+        <div class="blur-sphere sphere-blue"></div>
+        <div class="blur-sphere sphere-accent"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header id="header" class="glass">
+        <nav class="container">
+            <div class="logo">RRB.</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <i data-lucide="menu"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text reveal">
+                    <span class="greeting">Hi, I'm</span>
+                    <h1>Roshan Rayala Bhaskar</h1>
+                    <p class="typewriter-container">
+                        <span id="typewriter"></span><span class="cursor">|</span>
+                    </p>
+                    <p class="hero-description">
+                        Digital Engineering specialist passionate about merging technology with real-world challenges
+                        through Gen AI and Computer Vision.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="https://roshanbhaskar-portfolio.netlify.app/img/Resume_Roshan_Rayala_Bhaskar.pdf"
+                            target="_blank" class="btn btn-primary">
+                            <i data-lucide="download"></i> Download CV
+                        </a>
+                        <a href="#contact" class="btn btn-outline">Let's Talk</a>
+                    </div>
+                </div>
+                <div class="hero-image reveal">
+                    <div class="profile-circles-container">
+                        <!-- Animated circles -->
+                        <div class="animated-circle circle-1"></div>
+                        <div class="animated-circle circle-2"></div>
+                        <div class="animated-circle circle-3"></div>
+                        <!-- Profile image -->
+                        <div class="image-wrapper">
+                            <img src="images/profile.jpg" alt="Roshan Rayala Bhaskar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title reveal">About Me</h2>
+                <div class="about-grid reveal">
+                    <div class="about-text">
+                        <p>I’m an <strong>AI Engineer</strong> with a background in <strong>mechanical
+                                engineering</strong>, focused on building practical, production-ready AI systems for
+                            real industrial challenges.</p>
+                        <p>My work spans <strong>Computer Vision, 3D applications, Vision-Language Models, RAG
+                                systems</strong>, and <strong>ML pipelines</strong> used in engineering and
+                            manufacturing domains. I enjoy working on the <strong>full lifecycle</strong> of an AI
+                            solution — from understanding technical requirements to designing models, building scalable
+                            pipelines, and deploying them in real environments.</p>
+                        <p>I’ve developed solutions such as Automated analysis of CAD Documents using hybrid <strong>CV
+                                & VLM pipelines</strong>, multimodal <strong>retrieval systems</strong> for technical
+                            documents, prediction models for configuring complex fuel-cell test stations, <strong>OCR
+                                workflows</strong> for P&ID diagrams, and end-to-end <strong>MLOps systems</strong> with
+                            <strong>MLflow, Docker</strong>, and <strong>CI/CD</strong>.
+                        </p>
+                        <p>Across projects, my goal is simple: use AI to reduce manual effort, improve decision-making,
+                            and unlock new levels of <strong>efficiency</strong> in engineering processes.</p>
+                    </div>
+                    <div class="about-layout-right">
+                        <div class="about-image reveal">
+                            <img src="images/about_infographic.png" alt="AI Engineering Infographic"
+                                style="width: 100%; border-radius: var(--radius-md);">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Languages Card -->
+                <div class="languages-card reveal">
+                    <h3><i data-lucide="globe"></i> Languages</h3>
+                    <div class="languages-list">
+                        <!-- German First -->
+                        <div class="language-item">
+                            <div class="language-info">
+                                <span class="language-name">German</span>
+                                <span class="language-level b2">B2 — Conversational</span>
+                                <span class="language-desc">Experience in German-speaking teams and projects</span>
+                            </div>
+                        </div>
+                        <!-- English Second -->
+                        <div class="language-item">
+                            <div class="language-info">
+                                <span class="language-name">English</span>
+                                <span class="language-level c1">C1 — Business Fluent</span>
+                                <span class="language-desc">Fluent in technical and professional environments</span>
+                            </div>
+                        </div>
+                        <!-- Kannada Third -->
+                        <div class="language-item">
+                            <div class="language-info">
+                                <span class="language-name">Kannada</span>
+                                <span class="language-level native">Native</span>
+                                <span class="language-desc">Mother tongue</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" style="padding: 4rem 0;">
+            <div class="container">
+                <h2 class="section-title reveal">Technical Skills</h2>
+                <div class="skills-column reveal">
+                    <div class="skill-category-compact">
+                        <h3>Programming</h3>
+                        <div class="skill-tags-compact">
+                            <span class="skill-tag-outlined"><i class="devicon-python-plain"></i> Python</span>
+                            <span class="skill-tag-outlined"><i class="devicon-azuresqldatabase-plain"></i> SQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category-compact">
+                        <h3>ML & DL</h3>
+                        <div class="skill-tags-compact">
+                            <span class="skill-tag-outlined"><i class="devicon-pytorch-original"></i> PyTorch</span>
+                            <span class="skill-tag-outlined"><i class="devicon-opencv-plain"></i> OpenCV</span>
+                            <span class="skill-tag-outlined"><i class="devicon-scikitlearn-plain"></i>
+                                Scikit-learn</span>
+                            <span class="skill-tag-outlined"><i class="devicon-matplotlib-plain"></i> Matplotlib</span>
+                        </div>
+                    </div>
+                    <div class="skill-category-compact">
+                        <h3>LLMs & Frameworks</h3>
+                        <div class="skill-tags-compact">
+                            <span class="skill-tag-outlined"><i class="devicon-langchain-plain"></i> LangChain</span>
+                            <span class="skill-tag-outlined"><i class="devicon-llvm-plain"></i> Llama.cpp</span>
+                            <span class="skill-tag-outlined"><i class="devicon-huggingface-plain"></i>
+                                Huggingface</span>
+                            <span class="skill-tag-outlined"><i class="devicon-pydantic-plain"></i> Pydantic</span>
+                            <span class="skill-tag-outlined"><i class="devicon-fastapi-plain"></i> FastAPI</span>
+                        </div>
+                    </div>
+                    <div class="skill-category-compact">
+                        <h3>MLOps & Software</h3>
+                        <div class="skill-tags-compact">
+                            <span class="skill-tag-outlined"><i class="devicon-mlflow-plain"></i> MLflow</span>
+                            <span class="skill-tag-outlined"><i class="devicon-docker-plain"></i> Docker</span>
+                            <span class="skill-tag-outlined"><i class="devicon-git-plain"></i> Git</span>
+                            <span class="skill-tag-outlined"><i class="devicon-githubactions-plain"></i> CI/CD</span>
+                            <span class="skill-tag-outlined"><i class="devicon-python-plain"></i> OOP</span>
+                            <span class="skill-tag-outlined"><i class="devicon-pytest-plain"></i> Testing</span>
+                        </div>
+                    </div>
+                    <div class="skill-category-compact">
+                        <h3>Data Engineering</h3>
+                        <div class="skill-tags-compact">
+                            <span class="skill-tag-outlined"><i class="devicon-apacheairflow-plain"></i> ETL
+                                workflows</span>
+                            <span class="skill-tag-outlined"><i class="devicon-postgresql-plain"></i> SQL
+                                Databases</span>
+                            <span class="skill-tag-outlined"><i class="devicon-elasticsearch-plain"></i> Vector
+                                Databases</span>
+                        </div>
+                    </div>
+                    <div class="skill-category-compact">
+                        <h3>Cloud</h3>
+                        <div class="skill-tags-compact">
+                            <span class="skill-tag-outlined"><i class="devicon-amazonwebservices-plain-wordmark"></i>
+                                AWS</span>
+                            <span class="skill-tag-outlined"><i class="devicon-azure-plain"></i> Azure</span>
+                        </div>
+                    </div>
+                    <div class="skill-category-compact">
+                        <h3>Soft Skills</h3>
+                        <div class="skill-tags-compact">
+                            <span class="skill-tag-outlined"><i data-lucide="lightbulb"></i> Problem-solving</span>
+                            <span class="skill-tag-outlined"><i data-lucide="users"></i> Collaboration</span>
+                            <span class="skill-tag-outlined"><i data-lucide="trending-up"></i> Analytical
+                                Thinking</span>
+                            <span class="skill-tag-outlined"><i data-lucide="target"></i> Attention to Detail</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <div class="container">
+                <h2 class="section-title reveal">Experience</h2>
+                <div class="timeline reveal">
+                    <!-- Master Thesis -->
+                    <div class="timeline-item">
+                        <div class="timeline-logo">
+                            <img src="https://www.ata-anlagentechnik.de/fileadmin/public/img/logo_ata.png"
+                                alt="ATA Logo">
+                        </div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="experience-header">
+                                <div class="experience-info">
+                                    <span class="timeline-date">Dec 2024 - Oct 2025</span>
+                                    <h3>Master Thesis - GenAI & Process Automation</h3>
+                                    <a href="https://www.ata-anlagentechnik.de/" target="_blank" class="company-link">
+                                        ATA Anlagentechnik Aschersleben GmbH | OVGU Institute
+                                        <i data-lucide="external-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="experience-list">
+                                <li>Built a <strong>hybrid AI pipeline</strong> with vision-language models and
+                                    synthetic data to automate <strong>symbol and attribute extraction</strong> from CAD
+                                    drawings for BOM and welding workflows.</li>
+                                <li>Optimized <strong>multimodal models</strong> for lightweight hardware using
+                                    <strong>quantization techniques</strong>, with research accepted for publication in
+                                    <strong>Operations Management Research</strong>.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Horiba FuelCon -->
+                    <div class="timeline-item">
+                        <div class="timeline-logo">
+                            <img src="https://www.horiba-fuelcon.com/typo3conf/ext/fuelcon/Resources/Public/Images/Logo-HORIBA-FuelCon.svg"
+                                alt="Horiba Logo" class="horiba-logo">
+                        </div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="experience-header">
+                                <div class="experience-info">
+                                    <h3 style="margin: 0;">
+                                        <a href="https://www.horiba-fuelcon.com/testsysteme" target="_blank"
+                                            class="company-link"
+                                            style="font-size: 1.25rem; font-weight: 700; color: var(--text-primary);">
+                                            Horiba FuelCon GmbH <i data-lucide="external-link"
+                                                style="width: 16px; height: 16px;"></i>
+                                        </a>
+                                    </h3>
+                                    <p class="company"
+                                        style="margin: 0.2rem 0 0 0; color: var(--text-secondary); font-weight: 500;">
+                                        Magdeburg, Germany</p>
+                                </div>
+                            </div>
+
+                            <div class="sub-role">
+                                <span class="timeline-date">Oct 2024 - Oct 2025</span>
+                                <h4>Data Science</h4>
+                                <ul class="experience-list">
+                                    <li>Developed <strong>ML pipelines</strong> for predicting system-tags, built
+                                        <strong>OCR tools</strong> for extracting data from CAD documents.
+                                    </li>
+                                    <li>Created <strong>PoC text-to-SQL systems</strong> for efficient querying of
+                                        engineering databases.</li>
+                                </ul>
+                            </div>
+
+                            <div class="sub-role"
+                                style="margin-top: 1.5rem; border-top: 1px solid var(--border-color); padding-top: 1.5rem;">
+                                <span class="timeline-date">Nov 2023 - Sep 2024</span>
+                                <h4>Data Analytics</h4>
+                                <ul class="experience-list">
+                                    <li>Developed a <strong>full-stack analytics platform</strong> integrating SQL data
+                                        and <strong>CI/CD automation</strong>.</li>
+                                    <li>Improved <strong>real-time test station analysis</strong> and streamlined
+                                        internal workflows.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TCS -->
+                    <div class="timeline-item">
+                        <div class="timeline-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Tata_Consultancy_Services_old_logo.svg/2560px-Tata_Consultancy_Services_old_logo.svg.png"
+                                alt="TCS Logo">
+                        </div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="experience-header">
+                                <div class="experience-info">
+                                    <span class="timeline-date">Feb 2021 – Sep 2022</span>
+                                    <h3>Systems Engineer</h3>
+                                    <a href="https://www.tcs.com/" target="_blank" class="company-link">
+                                        Tata Consultancy Services - GM Tech Center
+                                        <i data-lucide="external-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="experience-list">
+                                <li>Supported <strong>ML pipelines</strong> and contributed to an <strong>image-to-3D
+                                        proof-of-concept</strong> for early automotive design workflows.</li>
+                                <li>Built <strong>CAD/PLM software tools</strong> to streamline engineering tasks and
+                                    improve design productivity.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Estech Design -->
+                    <div class="timeline-item">
+                        <div class="timeline-logo">
+                            <img src="https://estech-design.com/assets_auto/deco/logo_estech_v3.svg" alt="Estech Logo">
+                        </div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="experience-header">
+                                <div class="experience-info">
+                                    <span class="timeline-date">Feb 2019 – Jan 2021</span>
+                                    <h3>Project Engineer</h3>
+                                    <a href="https://estech-design.com/en/" target="_blank" class="company-link">
+                                        Estech Design, India <i data-lucide="external-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="experience-list">
+                                <li>Spearheaded product design and development for manufacturing sectors.</li>
+                                <li>Optimized production workflows and improved design efficiency.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <div class="container">
+                <h2 class="section-title reveal">Education</h2>
+                <div class="timeline reveal">
+                    <!-- Master Degree -->
+                    <div class="timeline-item">
+                        <div class="timeline-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Otto_von_Guericke_Universit%C3%A4t_Magdeburg_logo.svg/2560px-Otto_von_Guericke_Universit%C3%A4t_Magdeburg_logo.svg.png"
+                                alt="OVGU Logo">
+                        </div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="experience-header">
+                                <div class="experience-info">
+                                    <span class="timeline-date">Oct 2022 – Oct 2025</span>
+                                    <h3>Master of Science - Digital Engineering</h3>
+                                    <p class="company">Otto-von-Guericke University, Magdeburg, Germany</p>
+                                </div>
+                            </div>
+                            <ul class="experience-list">
+                                <li><strong>Focus:</strong> Generative Models, Computer Vision, Deep Learning</li>
+                                <li><strong>Grade:</strong> 2,1</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- PG Diploma -->
+                    <div class="timeline-item">
+                        <div class="timeline-logo">
+                            <img src="https://sop.uohyd.ac.in/Photos/UoH_logo.jpg" alt="University of Hyderabad Logo">
+                        </div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="experience-header">
+                                <div class="experience-info">
+                                    <span class="timeline-date">Aug 2021 – Aug 2022</span>
+                                    <h3>Postgraduate Diploma in AI & ML</h3>
+                                    <p class="company">University of Hyderabad, India | Online-Plattform</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bachelor Degree -->
+                    <div class="timeline-item">
+                        <div class="timeline-logo">
+                            <img src="https://sjbit.edu.in/wp-content/uploads/2021/07/VTU-Logo-250x250-1.png"
+                                alt="VTU Logo">
+                        </div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="experience-header">
+                                <div class="experience-info">
+                                    <span class="timeline-date">Jun 2012 – Jul 2016</span>
+                                    <h3>Bachelor of Mechanical Engineering</h3>
+                                    <p class="company">Visveswaraya Technological University, Hassan, India</p>
+                                </div>
+                            </div>
+                            <ul class="experience-list">
+                                <li><strong>Focus:</strong> Product Design and Manufacturing, CAD, C Programming,
+                                    Engineering Management</li>
+                                <li><strong>Grade:</strong> 1,9</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container">
+                <h2 class="section-title reveal">Featured Projects</h2>
+                <div class="projects-grid-new reveal">
+
+                    <!-- Project 1: MLOps Pipeline -->
+                    <div class="project-card-new">
+                        <div class="project-domain-tags">
+                            <span class="domain-tag mlops">MLOps</span>
+                            <span class="domain-tag cloud">Cloud</span>
+                            <span class="domain-tag ml">Machine Learning</span>
+                        </div>
+                        <div class="project-image">
+                            <img src="images/project_mlops.png" alt="MLOps Pipeline">
+                        </div>
+                        <div class="project-content">
+                            <h3>End-to-End MLOps Pipeline with MLflow & CI/CD on AWS</h3>
+                            <p>Designed and implemented a modular, end-to-end MLOps pipeline integrating data stages
+                                (ingestion, validation, transformation) with ElasticNet model training and leveraging
+                                MLflow for experimentation tracking; deployed Flask app to AWS EC2 using Docker and
+                                GitHub Actions.</p>
+                            <div class="project-tools">
+                                <span class="tool-tag"><i class="devicon-python-plain"></i> Python</span>
+                                <span class="tool-tag"><i class="devicon-mlflow-plain"></i> MLflow</span>
+                                <span class="tool-tag"><i class="devicon-docker-plain"></i> Docker</span>
+                                <span class="tool-tag"><i class="devicon-amazonwebservices-plain-wordmark"></i>
+                                    AWS</span>
+                                <span class="tool-tag"><i class="devicon-flask-original"></i> Flask</span>
+                                <span class="tool-tag"><i class="devicon-githubactions-plain"></i> GitHub Actions</span>
+                            </div>
+                            <a href="https://github.com/Roshan-RB/end-to-end_ML_with_MLflow" target="_blank"
+                                class="project-code-btn">
+                                <i data-lucide="github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Multimodal RAG -->
+                    <div class="project-card-new">
+                        <div class="project-domain-tags">
+                            <span class="domain-tag llm">LLMs</span>
+                            <span class="domain-tag ai">AI/ML</span>
+                            <span class="domain-tag rag">RAG</span>
+                        </div>
+                        <div class="project-image">
+                            <img src="images/project_rag.png" alt="Multimodal RAG">
+                        </div>
+                        <div class="project-content">
+                            <h3>Multimodal RAG Application for Custom Document QA</h3>
+                            <p>Built a scalable multimodal RAG system (LangChain + LLMs + FastAPI) enabling end-to-end
+                                processing of text, image, and tables in documents for practical, industrializable QA
+                                workflows.</p>
+                            <div class="project-tools">
+                                <span class="tool-tag"><i class="devicon-python-plain"></i> Python</span>
+                                <span class="tool-tag"><i class="devicon-langchain-plain"></i> LangChain</span>
+                                <span class="tool-tag"><i class="devicon-fastapi-plain"></i> FastAPI</span>
+                                <span class="tool-tag"><i class="devicon-openai-plain"></i> OpenAI</span>
+                                <span class="tool-tag"><i class="devicon-elasticsearch-plain"></i> Vector DB</span>
+                            </div>
+                            <a href="#"
+                                onclick="alert('This project contains confidential data and is private.'); return false;"
+                                class="project-code-btn project-private">
+                                <i data-lucide="lock"></i> Private
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Requirements Engineering -->
+                    <div class="project-card-new">
+                        <div class="project-domain-tags">
+                            <span class="domain-tag llm">LLMs</span>
+                            <span class="domain-tag nlp">NLP</span>
+                            <span class="domain-tag automation">Automation</span>
+                        </div>
+                        <div class="project-image">
+                            <img src="images/project_requirements.png" alt="Requirements Engineering">
+                        </div>
+                        <div class="project-content">
+                            <h3>LLM Framework for Automated Quality Check in Requirements Engineering</h3>
+                            <p>Created an OpenAI LLM-powered assistant for analyzing and revising natural language
+                                requirements according to 42-INCOSE rules, with automatic classification and interactive
+                                visualization in Streamlit.</p>
+                            <div class="project-tools">
+                                <span class="tool-tag"><i class="devicon-python-plain"></i> Python</span>
+                                <span class="tool-tag"><i class="devicon-openai-plain"></i> OpenAI</span>
+                                <span class="tool-tag"><i class="devicon-streamlit-plain"></i> Streamlit</span>
+                                <span class="tool-tag"><i class="devicon-pandas-plain"></i> Pandas</span>
+                            </div>
+                            <a href="#"
+                                onclick="alert('This project is private and will be published soon.'); return false;"
+                                class="project-code-btn project-private">
+                                <i data-lucide="lock"></i> Coming Soon
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: OCR CAD -->
+                    <div class="project-card-new">
+                        <div class="project-domain-tags">
+                            <span class="domain-tag cv">Computer Vision</span>
+                            <span class="domain-tag ocr">OCR</span>
+                            <span class="domain-tag industry">Industry 5.0</span>
+                        </div>
+                        <div class="project-image">
+                            <img src="images/project_ocr.png" alt="OCR CAD Extraction">
+                        </div>
+                        <div class="project-content">
+                            <h3>OCR-Enhanced CAD Data Extraction and Processing</h3>
+                            <p>Developed an interactive app for dimension detection and extraction in CAD drawings using
+                                OpenCV and EasyOCR, achieving 96% accuracy with Human-in-the-Loop following Industry 5.0
+                                principles.</p>
+                            <div class="project-tools">
+                                <span class="tool-tag"><i class="devicon-python-plain"></i> Python</span>
+                                <span class="tool-tag"><i class="devicon-opencv-plain"></i> OpenCV</span>
+                                <span class="tool-tag"><i class="devicon-streamlit-plain"></i> Streamlit</span>
+                                <span class="tool-tag"><i data-lucide="scan-text"></i> EasyOCR</span>
+                            </div>
+                            <a href="https://github.com/Roshan-RB/ATA-David" target="_blank" class="project-code-btn">
+                                <i data-lucide="github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Unity VR -->
+                    <div class="project-card-new">
+                        <div class="project-domain-tags">
+                            <span class="domain-tag vr">VR/AR</span>
+                            <span class="domain-tag medical">Medical</span>
+                            <span class="domain-tag gaming">Gamification</span>
+                        </div>
+                        <div class="project-image">
+                            <img src="images/project_vr.png" alt="Unity VR Training">
+                        </div>
+                        <div class="project-content">
+                            <h3>Unity VR Training Application for Neurosurgeons</h3>
+                            <p>Gamification-based VR training app for neurosurgeons to analyze DSA images. Built with
+                                Unity and SteamVR, providing an immersive 3D environment for interacting with cerebral
+                                vasculature models and enhancing visuospatial skills.</p>
+                            <div class="project-tools">
+                                <span class="tool-tag"><i class="devicon-unity-plain"></i> Unity</span>
+                                <span class="tool-tag"><i class="devicon-csharp-plain"></i> C#</span>
+                                <span class="tool-tag"><i data-lucide="glasses"></i> SteamVR</span>
+                                <span class="tool-tag"><i class="devicon-blender-original"></i> Blender</span>
+                            </div>
+                            <a href="https://github.com/Roshan-RB/VR-Training-Application" target="_blank"
+                                class="project-code-btn">
+                                <i data-lucide="github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: Deep Learning & Generative Models -->
+                    <div class="project-card-new">
+                        <div class="project-domain-tags">
+                            <span class="domain-tag dl">Deep Learning</span>
+                            <span class="domain-tag gen">Generative AI</span>
+                            <span class="domain-tag research">Research</span>
+                        </div>
+                        <div class="project-image">
+                            <img src="images/project_deeplearning.png" alt="Deep Learning Models">
+                        </div>
+                        <div class="project-content">
+                            <h3>Deep Learning and Generative Models Collection</h3>
+                            <p>Comprehensive collection of DL & Generative Models implementations including MLPs, CNNs,
+                                RNNs, Transformers, VAEs, GANs, Autoregressive Models, NICE, Score-Based Models, and
+                                Denoising Diffusion using TensorFlow & PyTorch.</p>
+                            <div class="project-tools">
+                                <span class="tool-tag"><i class="devicon-pytorch-original"></i> PyTorch</span>
+                                <span class="tool-tag"><i class="devicon-tensorflow-original"></i> TensorFlow</span>
+                                <span class="tool-tag"><i class="devicon-python-plain"></i> Python</span>
+                                <span class="tool-tag"><i class="devicon-jupyter-plain"></i> Jupyter</span>
+                            </div>
+                            <a href="https://github.com/Roshan-RB/Deep_Learning-course-Assignments" target="_blank"
+                                class="project-code-btn">
+                                <i data-lucide="github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Publications Section -->
+        <section id="publications">
+            <div class="container">
+                <h2 class="section-title reveal">Publications</h2>
+                <div class="publications-grid reveal">
+
+                    <!-- Publication 1: IFAC MIM 2025 -->
+                    <div class="publication-card">
+                        <div class="publication-image">
+                            <img src="images/pub_ifac.jpg" alt="IFAC MIM 2025">
+                        </div>
+                        <div class="publication-content">
+                            <div class="publication-status published">
+                                <i data-lucide="check-circle"></i> Published
+                            </div>
+                            <h3>Bridging Manual & Automated Workflows: CAD Drawing Data Extraction in Industry 5.0</h3>
+                            <div class="publication-venue">
+                                <i data-lucide="award"></i>
+                                <span>IFAC MIM 2025 (International Federation of Automatic Control)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Publication 2: Journal Article in Progress -->
+                    <div class="publication-card">
+                        <div class="publication-image">
+                            <img src="images/pub_journal.jpg" alt="Operations Management Research Journal">
+                        </div>
+                        <div class="publication-content">
+                            <div class="publication-status in-progress">
+                                <i data-lucide="clock"></i> In Progress
+                            </div>
+                            <h3>Journal Article</h3>
+                            <div class="publication-venue">
+                                <i data-lucide="book-open"></i>
+                                <span>Operations Management Research (Springer) - Invitation Received</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title reveal">Get In Touch</h2>
+                <div class="contact-info reveal">
+                    <div class="contact-item">
+                        <i data-lucide="mail"></i>
+                        <span>roshanrb001@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i data-lucide="map-pin"></i>
+                        <span>Magdeburg, Germany</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/roshanbhaskar/" target="_blank"><i
+                                data-lucide="linkedin"></i></a>
+                        <a href="https://github.com/Roshan-RB" target="_blank"><i data-lucide="github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Roshan Rayala Bhaskar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
