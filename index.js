@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Typewriter Effect
     const typewriterElement = document.getElementById('typewriter');
-    const words = ["Gen AI Specialist", "Computer Vision Specialist", "Digital Engineer"];
+    const words = ["Data Science", "Machine Learning", "Generative AI", "Computer Vision"];
     let wordIndex = 0;
     let charIndex = 0;
     let isDeleting = false;

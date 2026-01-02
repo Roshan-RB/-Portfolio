@@ -1378,6 +1378,121 @@ header nav {
     height: 28px;
 }
 
+/* Extra Curricular Activities Section */
+.extracurricular-card {
+    background: var(--card-bg);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.extracurricular-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.extracurricular-img-placeholder {
+    aspect-ratio: 4/3;
+    min-height: 160px;
+    background: var(--bg-color);
+    border: 2px dashed var(--border-color);
+    border-radius: var(--radius-sm);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    transition: var(--transition-fast);
+}
+
+.extracurricular-img-placeholder i {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 0.5rem;
+    opacity: 0.4;
+}
+
+.extracurricular-img-placeholder span {
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
+.extracurricular-img-placeholder:hover {
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+}
+
+.extracurricular-header {
+    margin-bottom: 1rem;
+}
+
+.extracurricular-header h3 {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.extracurricular-org {
+    color: var(--accent-primary);
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: var(--transition-fast);
+}
+
+.extracurricular-org:hover {
+    color: var(--accent-secondary);
+}
+
+.extracurricular-org i {
+    width: 14px;
+    height: 14px;
+}
+
+.inline-link {
+    color: var(--accent-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition-fast);
+}
+
+.inline-link:hover {
+    color: var(--accent-secondary);
+    text-decoration: underline;
+}
+
+.extracurricular-description {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.extracurricular-details {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .extracurricular-card {
+        grid-template-columns: 1fr;
+    }
+
+    .extracurricular-images {
+        flex-direction: column;
+    }
+}
+
 /* Footer */
 footer {
     padding: 4rem 0;
